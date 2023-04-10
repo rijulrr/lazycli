@@ -43,13 +43,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "app"
-version = "0.1.0"
-dependencies = [
- "clap",
-]
-
-[[package]]
 name = "bitflags"
 version = "1.3.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -172,6 +165,13 @@ dependencies = [
  "io-lifetimes",
  "rustix",
  "windows-sys",
+]
+
+[[package]]
+name = "lazycli"
+version = "0.1.0"
+dependencies = [
+ "clap",
 ]
 
 [[package]]
