@@ -1,5 +1,5 @@
 # lazycli
-ChatGPT in your terminal...cuz why not?
+AI-assistant in your terminal
 
 # Installation
 
