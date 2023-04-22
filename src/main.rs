@@ -12,8 +12,8 @@ pub(crate) struct Cli {
     prompt: Vec<String>,
 
     /// Execute generated text, such as shell commands
-    #[clap(short = 'y', long)]
-    force: bool,
+    #[clap(short = 'e', long)]
+    exec: bool,
 }
 
 #[tokio::main]
@@ -42,7 +42,7 @@ async fn main() -> Result<(), Box<dyn Error>> {
 
     let choice = response.choices.iter().nth(0).unwrap();
 
-    if args.force {
+    if args.exec {
         
         let mut command = Command::new("bash");
         command.arg("-c").arg(&choice.text);

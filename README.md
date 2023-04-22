@@ -16,7 +16,7 @@ Run lazycli --help to get a full list of options:
 
 ```sh
 $ lazycli --help
-ChatGPT in the terminal, 'nuff said
+"ChatGPT in the terminal, 'nuff said"
 
 Usage: lazycli [OPTIONS] [PROMPT]...
 
@@ -24,7 +24,7 @@ Arguments:
   [PROMPT]...  The prompt given by the user
 
 Options:
-  -y, --force    Execute generated text, such as shell commands
+  -e, --exec    Execute generated text, such as shell commands
   -h, --help     Print help
   -V, --version  Print version
 ```
