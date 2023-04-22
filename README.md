@@ -3,7 +3,7 @@ ChatGPT in your terminal...cuz why not?
 
 # Installation
 
-Install this project by downloading the `install.sh` and running it
+Install this project by downloading the `install.sh`, running `sudo chmod +x install.sh`, and then `./install.sh`
 
 # Usage
 `lazycli` utilizes the GPT-3 model to generate completions. In order to use it, you need an [OpenAI API](https://openai.com/blog/openai-api) Key
