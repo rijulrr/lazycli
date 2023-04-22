@@ -6,7 +6,7 @@ use clap::Parser;
 use tokio::process::Command;
 
 #[derive(Parser)]
-#[command(author, version, about, long_about = None)]
+#[command(author="Rijul Ranjan", version, about="ChatGPT in the terminal, 'nuff said", long_about = None)]
 pub(crate) struct Cli {
     /// The prompt given by the user
     prompt: Vec<String>,
