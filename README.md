@@ -10,7 +10,7 @@ On Linux:
 export OPENAI_API_KEY='sk...'
 ```
 
-Build the binary by running `cargo run --path .`
+Build the binary by running `cargo install --path .`
 
 Run lazycli --help to get a full list of options:
 
