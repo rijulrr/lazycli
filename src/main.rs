@@ -4,6 +4,7 @@ use std::error::Error;
 use async_openai::{types::CreateCompletionRequestArgs, Client};
 use clap::Parser;
 use tokio::process::Command;
+use std::env;
 
 #[derive(Parser)]
 #[command(author="Rijul Ranjan", version, about="ChatGPT in the terminal, 'nuff said", long_about = None)]
@@ -44,9 +45,13 @@ async fn main() -> Result<(), Box<dyn Error>> {
 
     if args.exec {
         
-        let mut command = Command::new("bash");
+        let shell = env::var("SHELL").unwrap_or_default();
+
+        let mut command = Command::new(shell);
         command.arg("-c").arg(&choice.text);
+
         let output = command.output().await?;
+        
         println!("{}", String::from_utf8_lossy(&output.stdout));
 
     } else {
