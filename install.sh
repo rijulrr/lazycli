@@ -10,15 +10,15 @@ fi
 
 # Download the program
 echo 'Downloading program...'
-curl -L https://github.com/user/program/archive/master.zip -o program.zip
+curl -L https://github.com/rijulrr/lazycli/archive/master.zip -o lazycli.zip
 
 # Unzip the program
 echo 'Unzipping program...'
-unzip program.zip
+unzip lazycli.zip
 
 # Change into the program directory
 echo 'Changing into program directory...'
-cd program-master
+cd lazycli
 
 # Build the program
 echo 'Building program...'
@@ -31,6 +31,6 @@ cargo install --path .
 # Clean up
 echo 'Cleaning up...'
 cd ..
-rm -rf program-master program.zip
+rm -rf lazycli lazycli.zip
 
 echo 'Installation complete!'
