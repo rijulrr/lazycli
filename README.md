@@ -14,9 +14,9 @@ On Linux/macOS:
 export OPENAI_API_KEY='sk-...'
 ```
 
-You can also add the key to your shells configuration file (ending in `.rc`)
+You can also add the key to your shells configuration file (ending in `rc`)
 
-Run lazycli --help to get a full list of options:
+Run `lazycli --help` to get a full list of options:
 
 ```sh
 $ lazycli --help
