@@ -3,7 +3,10 @@ AI-assistant in your terminal
 
 # Installation
 
-Install this project by downloading the `install.sh`. Then, run `sudo chmod +x install.sh`, and then `./install.sh`
+Install this project by running the following command:
+```bash
+curl -fsSL https://raw.githubusercontent.com/rijulrr/lazycli/main/install.sh | sh -
+```
 
 # Usage
 `lazycli` utilizes the GPT-3 model to generate completions. In order to use it, you need an [OpenAI API](https://openai.com/blog/openai-api) Key
