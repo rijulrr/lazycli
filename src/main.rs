@@ -7,8 +7,8 @@ use tokio::process::Command;
 use std::env;
 
 #[derive(Parser)]
-#[command(author="Rijul Ranjan", version, about="ChatGPT in the terminal, 'nuff said", long_about = None)]
-pub(crate) struct Cli {
+#[command(author="Rijul Ranjan", version, about="Why do all the work when AI can instead?", long_about = None)]
+struct Cli {
     /// The prompt given by the user
     prompt: Vec<String>,
 
@@ -21,6 +21,8 @@ pub(crate) struct Cli {
 async fn main() -> Result<(), Box<dyn Error>> {
 
     let args = Cli::parse();
+
+    println!("Prompting...");
 
     let prompt: &str = args.prompt.first().map(String::as_str).unwrap_or_default();
 
