@@ -23,7 +23,7 @@ Run `lazycli --help` to get a full list of options:
 
 ```sh
 $ lazycli --help
-Why do all the work when AI can instead?
+"Why do all the work when AI can instead?"
 
 Usage: lazycli [OPTIONS] [PROMPT]...
 
